@@ -32,7 +32,7 @@ export const CHAINS: {
   [chainId: number]: BasicChainInformation | ExtendedChainInformation;
 } = {
   1: {
-    urls: ["https://mainnet.infura.io/v3/"],
+    urls: [`https://mainnet.infura.io/v3/${process.env.infuraKey}`],
     name: "Ethereum Mainnet",
   },
   3: {
