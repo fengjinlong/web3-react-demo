@@ -9,5 +9,6 @@ export function getName(connector: any) {
   if (connector instanceof WalletConnect) {
     return "WalletConnect";
   }
+
   return "Unknown";
 }

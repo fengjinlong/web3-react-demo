@@ -7,7 +7,7 @@ const {
   useAccounts,
   useIsActivating,
   useIsActive,
-  useProvider,
+  // useProvider,
   useENSNames,
 } = hooks;
 export default function MetaMaskCard() {
@@ -15,10 +15,17 @@ export default function MetaMaskCard() {
   const accounts = useAccounts();
   const isActivating = useIsActivating();
   const isActive = useIsActive();
-  const provider = useProvider();
+  // const provider = useProvider();
   const ensNames = useENSNames();
 
-  const [error, setError] = useState<Error | undefined>(undefined);
+  // console.log("accounts", accounts);
+  // console.log("provider", provider);
+  // console.log("ensNames", ensNames);
+  // console.log("chainId", chainId);
+  // console.log("isActivating", isActivating);
+  // console.log("isActive", isActive);
+
+  const [error, setError] = useState(undefined);
   useEffect(() => {
     // 试探一下连接的状态是否有问题，并不是自动连接，自动连接调起 metaMask 用 request
     metaMask
@@ -41,7 +48,7 @@ export default function MetaMaskCard() {
         error={error}
         ENSNames={ensNames}
         accounts={accounts}
-        // setError={setError}
+        setError={setError}
       />
     </div>
   );

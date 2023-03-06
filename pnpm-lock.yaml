@@ -18,7 +18,8 @@ specifiers:
   '@web3-react/core': 8.0.35-beta.0
   '@web3-react/metamask': 8.0.30-beta.0
   '@web3-react/types': 8.0.21-beta.0
-  '@web3-react/walletconnect': 8.0.38-beta.0
+  '@web3-react/walletconnect': 8.0.36-beta.0
+  buffer: ^6.0.3
   react: ^18.2.0
   react-dom: ^18.2.0
   react-scripts: 5.0.1
@@ -44,7 +45,8 @@ dependencies:
   '@web3-react/core': 8.0.35-beta.0_react@18.2.0
   '@web3-react/metamask': 8.0.30-beta.0_react@18.2.0
   '@web3-react/types': 8.0.21-beta.0_react@18.2.0
-  '@web3-react/walletconnect': 8.0.38-beta.0_a6am7bqntqsrf64p35rtri2khq
+  '@web3-react/walletconnect': 8.0.36-beta.0_a6am7bqntqsrf64p35rtri2khq
+  buffer: 6.0.3
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_4b623jbeyzi4h3l6het54x5soi
@@ -3207,13 +3209,13 @@ packages:
       - react
     dev: false
 
-  /@web3-react/walletconnect/8.0.38-beta.0_a6am7bqntqsrf64p35rtri2khq:
-    resolution: {integrity: sha512-inzqVMCsWrFXQ2LJvO57JKZskuHbV774Z5X+bbnj/lPLh8rl8F8Lz/CunS9yz4uYdcLS/PNDCqVvSSAVbxYBdw==}
+  /@web3-react/walletconnect/8.0.36-beta.0_a6am7bqntqsrf64p35rtri2khq:
+    resolution: {integrity: sha512-u+yNWCm8nz5pZn8SyU5+9pI5hakKcfhUF1TYwj7HVTTMHdMlLXhk19YyaycsFkgbX9zWzouItwxXF8obGt+rCg==}
     peerDependencies:
       '@walletconnect/ethereum-provider': ^1.7.8
     dependencies:
       '@walletconnect/ethereum-provider': 1.8.0
-      '@web3-react/types': 8.0.21-beta.0_react@18.2.0
+      '@web3-react/types': 8.0.20-beta.0_react@18.2.0
       eventemitter3: 4.0.7
     transitivePeerDependencies:
       - immer
@@ -3987,6 +3989,13 @@ packages:
 
   /buffer/5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
+    dev: false
+
+  /buffer/6.0.3:
+    resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
