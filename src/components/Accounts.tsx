@@ -35,6 +35,7 @@ export function Accounts({
   ENSNames: ReturnType<Web3ReactHooks["useENSNames"]>;
 }) {
   const balance = useBalance(provider, accounts);
+  console.log(accounts);
   if (accounts === undefined)
     return (
       <div>
@@ -43,7 +44,9 @@ export function Accounts({
     );
   return (
     <div>
-      Accounts:{" "}
+      Accounts:{" aa"}
+      <p>ppp</p>
+      {`${balance}`}
       <b>
         {accounts.length === 0
           ? "None"
