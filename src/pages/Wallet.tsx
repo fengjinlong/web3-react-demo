@@ -46,10 +46,10 @@ export const Wallet: React.FC<T> = (t) => {
       <Button
         ghost
         onClick={openBox}
-        style={{ margin: "10px", width: "250px" }}
+        style={{ margin: "10px", width: "300px" }}
         type="primary"
       >
-        钱包类型： {walletType}
+        钱包类型： {walletType} 💐💐 网络id: {initWallet.chainId}
       </Button>
       {box ? (
         walletType === "MetaMask" ? (
@@ -67,7 +67,7 @@ export const Wallet: React.FC<T> = (t) => {
           color: "#1677ff",
         }}
       >
-        请选择网络:{" "}
+        切换网络:{" "}
       </p>
       {initWallet.connector === metaMask ? (
         <SelectChain

@@ -79,7 +79,7 @@ export const Message: React.FC<Me> = (p: Me) => {
   return (
     <div
       style={{
-        width: "250px",
+        width: "300px",
         height: "300px",
         margin: "-10px 10px",
         borderRadius: "8px",

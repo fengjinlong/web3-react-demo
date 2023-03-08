@@ -7,7 +7,7 @@ const {
   useAccounts,
   useIsActivating,
   useIsActive,
-  // useProvider,
+  useProvider,
   useENSNames,
 } = hooks;
 export default function MetaMaskCard() {
@@ -15,7 +15,8 @@ export default function MetaMaskCard() {
   const accounts = useAccounts();
   const isActivating = useIsActivating();
   const isActive = useIsActive();
-  // const provider = useProvider();
+  const provider = useProvider();
+  console.log("provider", provider);
   const ensNames = useENSNames();
 
   // console.log("accounts", accounts);

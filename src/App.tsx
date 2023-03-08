@@ -4,6 +4,7 @@ import React from "react";
 import * as buffer from "buffer";
 import "antd/dist/reset.css";
 import { WalletsComponent } from "./pages/WalletsComponent";
+import MetaMaskCard from "./components/connectorCards/MetaMaskCard";
 
 if (typeof (window as any).global === "undefined") {
   (window as any).global = window;
@@ -15,8 +16,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <WalletsComponent />
-      {/* <MetaMaskCard />
-      <WalletConnectCard /> */}
+      {/* <MetaMaskCard /> */}
+      {/* <WalletConnectCard /> */}
     </div>
   );
 };

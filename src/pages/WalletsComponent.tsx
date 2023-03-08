@@ -14,7 +14,7 @@ export const WalletsComponent: React.FC = () => {
     return (
       <Button
         onClick={() => click(true)}
-        style={{ margin: "10px", width: "250px" }}
+        style={{ margin: "10px", width: "300px" }}
         type="primary"
         ghost
       >
