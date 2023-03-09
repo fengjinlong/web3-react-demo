@@ -4,9 +4,6 @@
 ![avatar](/pic/5.png)
 ![avatar](/pic/6.png)
 
-### cloudflare 部署地址
-1. 合约调度,偶尔不太稳定
-https://web3-react-demo.pages.dev/
 
   ### fuji 浏览器
   https://testnet.snowtrace.io/
@@ -16,3 +13,10 @@ https://web3-react-demo.pages.dev/
 
   ### 获取代币
   https://faucets.chain.link/fuji
+
+  ### cloudflare 部署地址
+1. 合约调度,偶尔不太稳定
+https://web3-react-demo.pages.dev/
+
+### ipfs 部署
+https://ipfs.io/ipfs/Qmd6kor7U4BShWkQBP6QvctWxs49Dfc8mA2Kw3uc1W4yDV?filename=index.html
