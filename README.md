@@ -1,11 +1,11 @@
 ![avatar](/pic/2.png)
-![avatar](/pic/1.png)
 ![avatar](/pic/3.png)
 ![avatar](/pic/4.png)
 ![avatar](/pic/5.png)
+![avatar](/pic/6.png)
 
 ### cloudflare 部署地址
-1. 合约调度不太稳定
+1. 合约调度,偶尔不太稳定
 https://web3-react-demo.pages.dev/
 
   ### fuji 浏览器
