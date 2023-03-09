@@ -53,7 +53,6 @@ function ChainSelect({
       setError: setError,
     });
   }, [chainId, isActivating, isActive, error]);
-  console.log("chainId2", chainId2);
   return (
     <Select
       value={chainId2}
@@ -88,6 +87,7 @@ export const SelectChain: React.FC<Props> = ({
   setError,
 }: Props) => {
   const [desiredChainId, setDesiredChainId] = useState<number>(1);
+  const [, setWall] = useAtom(wallet);
   const onClick = useCallback(() => {
     setError(undefined);
     if (connector instanceof WalletConnect) {
@@ -115,7 +115,6 @@ export const SelectChain: React.FC<Props> = ({
   // const [error, setError] = useState(undefined);
 
   const address = InfoAbi.networks[43113].address;
-  console.log("address", address);
   /**
    * @description: 切链
    * @return {*}
@@ -136,16 +135,23 @@ export const SelectChain: React.FC<Props> = ({
         console.log("connector", connector);
         connector
           .activate(desiredChainId === -1 ? undefined : desiredChainId)
-          .then(() => setError(undefined))
+          .then(() => {
+            setWall((v) => ({ ...v, chainId: desiredChainId }));
+            setError(undefined);
+          })
           .catch(setError);
       } else {
+        console.log("connector", connector);
         connector
           .activate(
             desiredChainId === -1
               ? undefined
               : getAddChainParameters(desiredChainId)
           )
-          .then(() => setError(undefined))
+          .then(() => {
+            setWall((v) => ({ ...v, chainId: desiredChainId }));
+            setError(undefined);
+          })
           .catch(setError);
       }
     },
@@ -155,9 +161,9 @@ export const SelectChain: React.FC<Props> = ({
   const displayDefault = false;
   const chainIds = Object.keys(CHAINS).map((chainId) => Number(chainId));
 
-  console.log("chainId", chainId);
-  console.log("isActivating", isActivating);
-  console.log("isActive", isActive);
+  // console.log("chainId", chainId);
+  // console.log("isActivating", isActivating);
+  // console.log("isActive", isActive);
 
   /**
    * @description: 调度合约
@@ -258,9 +264,13 @@ export const SelectChain: React.FC<Props> = ({
           连接成功，点击断开连接
         </Button>
         <div style={{ marginBottom: "1rem" }} />
-        <Button onClick={schedulContract} type="primary" disabled={isPending}>
-          调度合约
-        </Button>
+        {chainId === 43113 ? (
+          <Button onClick={schedulContract} type="primary" disabled={isPending}>
+            调度合约
+          </Button>
+        ) : (
+          ""
+        )}
       </div>
     );
   } else {
