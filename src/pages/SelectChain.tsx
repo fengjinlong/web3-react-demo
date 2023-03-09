@@ -114,7 +114,8 @@ export const SelectChain: React.FC<Props> = ({
   const [isPending, setPending] = useState(false);
   // const [error, setError] = useState(undefined);
 
-  const address = InfoAbi.networks[5777].address;
+  const address = InfoAbi.networks[43113].address;
+  console.log("address", address);
   /**
    * @description: 切链
    * @return {*}

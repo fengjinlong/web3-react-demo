@@ -83,6 +83,12 @@ export const CHAINS: {
     urls: ["http://localhost:7545/"],
     name: "TestNet",
   },
+  43113: {
+    urls: [
+      "https://avalanche-fuji.infura.io/v3/c9752e4a23434413a657cc6f2c27726d",
+    ],
+    name: "fuji",
+  },
   3: {
     urls: [
       process.env.infuraKey

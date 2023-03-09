@@ -17,8 +17,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -31,8 +30,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -1048,7 +1046,7 @@
   "sourceMap": "58:338:6:-:0;;;227:49;;;;;;;;;;259:10;251:5;;:18;;;;;;;;;;;;;;;;;;58:338;;;;;;",
   "deployedSourceMap": "58:338:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;110:39;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;84:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;282:112;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;110:39;;;;:::o;84:20::-;;;;;;;;;;;;:::o;282:112::-;206:5;;;;;;;;;;192:19;;:10;:19;;;188:26;;378:9:::1;351:24;:36;;;;188:26:::0;282:112;:::o;7:77:7:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:126::-;479:7;519:42;512:5;508:54;497:65;;442:126;;;:::o;574:96::-;611:7;640:24;658:5;640:24;:::i;:::-;629:35;;574:96;;;:::o;676:118::-;763:24;781:5;763:24;:::i;:::-;758:3;751:37;676:118;;:::o;800:222::-;893:4;931:2;920:9;916:18;908:26;;944:71;1012:1;1001:9;997:17;988:6;944:71;:::i;:::-;800:222;;;;:::o;1109:117::-;1218:1;1215;1208:12;1355:122;1428:24;1446:5;1428:24;:::i;:::-;1421:5;1418:35;1408:63;;1467:1;1464;1457:12;1408:63;1355:122;:::o;1483:139::-;1529:5;1567:6;1554:20;1545:29;;1583:33;1610:5;1583:33;:::i;:::-;1483:139;;;;:::o;1628:329::-;1687:6;1736:2;1724:9;1715:7;1711:23;1707:32;1704:119;;;1742:79;;:::i;:::-;1704:119;1862:1;1887:53;1932:7;1923:6;1912:9;1908:22;1887:53;:::i;:::-;1877:63;;1833:117;1628:329;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.10;\n\ncontract Migrations {\n    address public owner;\n    uint256 public last_completed_migration;\n\n    modifier restricted() {\n        if (msg.sender == owner) _;\n    }\n\n    constructor() {\n        owner = msg.sender;\n    }\n\n    function setCompleted(uint256 completed) public restricted {\n        last_completed_migration = completed;\n    }\n}\n",
-  "sourcePath": "/Users/yuanzhijia/Desktop/yd-truffle-demo/contracts/Migrations.sol",
+  "sourcePath": "/Users/fjl/Documents/github/web3-truffle/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1457,16 +1455,9 @@
     "name": "solc",
     "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
   },
-  "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x40087BCdEA216C328C21b6106840164aBa1CAe17",
-      "transactionHash": "0xf692924d532e48211ffb160fe27db6701b446f29536b998b5dfc2fc1009e4d25"
-    }
-  },
-  "schemaVersion": "3.4.12",
-  "updatedAt": "2023-02-26T08:05:30.128Z",
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-03-09T00:53:14.860Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
